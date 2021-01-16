@@ -27,6 +27,17 @@
   &--white {
     color: $color-grey-dark;
     background-color: $color-white;
+    &:hover::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--green {
+    color: $color-white;
+    background-color: $color-primary;
+    &:hover::after {
+      background-color: $color-primary;
+    }
   }
 
   &--animated {
