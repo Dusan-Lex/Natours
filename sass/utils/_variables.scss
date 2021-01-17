@@ -12,12 +12,16 @@ $color-tertiary-dark: #5643fa;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-$color-white: #fff;
 $color-grey-dark: #777;
+$color-grey-dark-2: #999;
+
+$color-white: #fff;
 $color-black: #000;
 
 //box-shadows
 $shadow-1: 0 1.5rem 4rem rgba($color-black, $alpha: 0.2);
+$shadow-2: 0 2rem 4rem rgba($color-black, $alpha: 0.3);
+$shadow-3: 0 1rem 2rem rgba($color-black, $alpha: 0.1);
 
 //fonts
 $default-font-size: 1.6rem;
