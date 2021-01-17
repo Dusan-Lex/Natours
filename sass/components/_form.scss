@@ -39,13 +39,13 @@
       color: $color-grey-dark-2;
       font-size: 1.8rem;
       opacity: 1;
-      transition: all 1s ease;
+      transition: all 0.5s ease;
     }
   }
 
   &__label {
     font-size: 1.8rem;
-    color: $color-grey-dark;
+    color: $color-grey-dark-1;
     display: block;
     margin-left: 1.8rem;
     opacity: 0;
