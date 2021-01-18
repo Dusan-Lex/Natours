@@ -47,7 +47,7 @@
   }
 
   &--animated {
-    animation: moveInDown 0.6s ease-out 1s both;
+    animation: moveInDown 0.6s ease-out 1s backwards;
   }
 
   &::after {
