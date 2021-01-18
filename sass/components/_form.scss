@@ -86,10 +86,10 @@
       display: block;
       border-radius: 50%;
       background-color: $color-primary;
-      position: absolute;
+
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      @include perfect-center;
       opacity: 0;
       transition: opacity 0.2s;
     }
