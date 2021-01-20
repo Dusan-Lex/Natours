@@ -38,6 +38,16 @@
     box-shadow: $shadow-3;
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-por) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -47,6 +57,17 @@
     position: fixed;
     top: 7rem;
     right: 7rem;
+
+    @include respond(tab-por) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+
     background-image: radial-gradient(
       $color-primary-light,
       $color-primary-dark

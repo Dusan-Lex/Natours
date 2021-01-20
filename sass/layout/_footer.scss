@@ -1,7 +1,15 @@
 .footer {
   background-color: $color-grey-dark-3;
   padding: 10rem 15rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+
+  @include respond(tab-land) {
+    padding: 10rem 11.5rem;
+  }
+
+  @include respond(tab-por) {
+    padding: 7rem 4rem;
+  }
 
   &__logo-box {
     text-align: center;
@@ -16,6 +24,11 @@
     border-top: 1px solid $color-grey-light-2;
     padding-top: 2rem;
     text-align: center;
+
+    @include respond(tab-por) {
+      width: 70%;
+      margin: auto;
+    }
   }
 
   &__list {
@@ -25,6 +38,10 @@
   &__item {
     display: inline-block;
     width: 19%;
+    @include respond(tab-por) {
+      width: 100%;
+      margin-top: 4rem;
+    }
   }
 
   &__link {
@@ -35,6 +52,10 @@
       display: inline-block;
       color: $color-grey-light-1;
       background-color: $color-grey-dark-3;
+
+      @include respond(tab-por) {
+        font-size: 2rem;
+      }
     }
     &:hover {
       color: $color-primary;

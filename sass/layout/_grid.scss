@@ -1,17 +1,30 @@
 .row {
   max-width: $grid-width;
+  @include respond(tab-por) {
+    max-width: 50rem;
+  }
 
   margin: 0 auto;
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+    @include respond(tab-por) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   @include clear-fix;
 
   [class^="col-"] {
     float: left;
+    @include respond(tab-por) {
+      width: 100% !important;
+    }
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+      @include respond(tab-por) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical;
+      }
     }
   }
 
